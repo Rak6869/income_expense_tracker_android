@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Retreive"
+    android:background="#0a3d62"
+    tools:ignore="ExtraText">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewGraph"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="#3c6382"
+        app:cardCornerRadius="10dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="152dp"
+            android:hint="@string/select_g"
+
+            app:boxBackgroundColor="#60a3bc">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_1"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="122dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/all"
+                android:layout_width="69dp"
+                android:layout_height="48dp"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="299dp"
+                android:layout_marginBottom="40dp"
+                android:baselineAligned="false"
+                android:text="all"
+                app:backgroundTint="#60a3bc"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.385"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.602" />
+
+
+            <Button
+                android:id="@+id/go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="136dp"
+                android:text="GO"
+                app:backgroundTint="#60a3bc"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.105"
+                tools:layout_editor_absoluteX="267dp" />
+
+            <Button
+                android:id="@+id/income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="93dp"
+                android:layout_marginBottom="40dp"
+                android:text="Income"
+                app:backgroundTint="#60a3bc"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.605"
+                tools:layout_editor_absoluteX="186dp" />
+
+            <Button
+                android:id="@+id/expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="190dp"
+                android:layout_marginBottom="40dp"
+                android:text="Expense"
+                app:backgroundTint="#60a3bc"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.598"
+                tools:layout_editor_absoluteX="3dp" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="82dp"
+                android:layout_height="49dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="39dp"
+                android:text="CLEAR"
+                app:backgroundTint="#60a3bc"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.597"
+                tools:layout_editor_absoluteX="287dp" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="218dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="167dp"
+                android:layout_marginEnd="78dp"
+                android:gravity="center"
+                android:text="TOTAL: 0"
+                android:textColor="#ffffff"
+                app:drawableTint="#FFFFFF" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="482dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="250dp"
+            android:layout_marginBottom="-1dp">
+
+            <TextView
+                android:id="@+id/dataholder"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                app:drawableTint="#671F1F"
+                app:fontFamily="@font/manjari" />
+
+        </ScrollView>
+
+</RelativeLayout>
