@@ -40,6 +40,12 @@ The Expense Tracker Android Application is designed to help users manage their i
 
 3. **Visualization Screen**: This screen displays a pie chart to visualize the user's income and expenses. The pie chart implementation is based on the tutorial available at [GeeksforGeeks](https://www.geeksforgeeks.org/how-to-add-a-pie-chart-into-an-android-application/).
 
+## Screenshots
+![main](https://github.com/Rak6869/income_expense_tracker_android/assets/67707536/09fb1c42-33c8-480b-9814-1548cd1efdec)
+![visualize](https://github.com/Rak6869/income_expense_tracker_android/assets/67707536/5f9ba7b9-d644-4754-b6d1-94b6e02c6fd3)
+![retrieve](https://github.com/Rak6869/income_expense_tracker_android/assets/67707536/012f563a-8571-4252-948b-8b02fd5594af)
+
+
 ## Development Environment
 
 The project was developed using Android Studio, a popular integrated development environment (IDE) for Android app development.
