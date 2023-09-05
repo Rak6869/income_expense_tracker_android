@@ -1,6 +1,6 @@
 # VTU 6th Sem MAD Project - Expense Tracker Android Application
 
-Welcome to the VTU 6th Sem Mobile Application Development (MAD) project repository for the Expense Tracker Android Application. This application is designed to help users manage their expenses and income conveniently. It has been developed using Android with the Chipmunk framework.
+Welcome to the VTU 6th Sem Mobile Application Development (MAD) project repository for the Expense Tracker Android Application. This application is designed to help users manage their expenses and income conveniently. It has been developed using Android Chipmunk.
 
 ## Project Details
 
